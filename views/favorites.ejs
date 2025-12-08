@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %> | Final Project</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>📚 Book Explorer</h1>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/favorites" class="active">My Favorites</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>My Favorite Books</h2>
+
+      <% if (favorites && favorites.length > 0) { %>
+        <ul class="book-list">
+          <% favorites.forEach(function(book) { %>
+            <li class="book-item">
+              <div class="book-cover">
+                <% if (book.coverUrl) { %>
+                  <img src="<%= book.coverUrl %>" alt="Cover for <%= book.title %>" />
+                <% } else { %>
+                  <div class="placeholder-cover">No Cover</div>
+                <% } %>
+              </div>
+              <div class="book-info">
+                <h3><%= book.title %></h3>
+                <p class="book-author">by <%= book.author %></p>
+
+                <% if (book.userNote) { %>
+                  <p class="book-note">Note: <%= book.userNote %></p>
+                <% } %>
+
+                <p class="book-date">
+                  Saved on:
+                  <%= book.dateAdded.toLocaleDateString('en-US') %>
+                </p>
+
+                <form class="delete-form" action="/favorites/<%= book._id %>/delete" method="post">
+                  <button type="submit">Remove from Favorites</button>
+                </form>
+              </div>
+            </li>
+          <% }); %>
+        </ul>
+      <% } else { %>
+        <p>You don't have any favorite books yet. Go <a href="/">search for some</a>!</p>
+      <% } %>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Final Exam Project • Node.js / Express / MongoDB / OpenLibrary API</p>
+  </footer>
+</body>
+</html>

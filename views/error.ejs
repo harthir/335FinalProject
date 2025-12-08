@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %> | Final Project</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>📚 Book Explorer</h1>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/favorites">My Favorites</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2><%= title %></h2>
+      <p><%= message %></p>
+      <p><a href="/">Return to Home</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Final Exam Project • Node.js / Express / MongoDB / OpenLibrary API</p>
+  </footer>
+</body>
+</html>

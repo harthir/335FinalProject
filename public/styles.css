@@ -1,0 +1,203 @@
+/* public/styles.css */
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+  font-size: 16px;
+}
+
+.site-header {
+  background-color: #4c6fff;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.nav a.active,
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.search-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-form label {
+  font-size: 0.9rem;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-form button {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  background-color: #4c6fff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #3a54d9;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #f9f9ff;
+  align-items: flex-start;
+}
+
+.book-cover img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-cover {
+  width: 80px;
+  height: 120px;
+  border-radius: 6px;
+  background-color: #dde3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.book-info h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.book-author {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.book-note {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+.book-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.favorite-form,
+.delete-form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.favorite-form input[type="text"] {
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.favorite-form button,
+.delete-form button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.favorite-form button {
+  background-color: #00b894;
+  color: #ffffff;
+}
+
+.favorite-form button:hover {
+  background-color: #009472;
+}
+
+.delete-form button {
+  background-color: #ff7675;
+  color: #ffffff;
+}
+
+.delete-form button:hover {
+  background-color: #d63031;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #d63031;
+  font-weight: 500;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}
