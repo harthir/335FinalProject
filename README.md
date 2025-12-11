@@ -3,7 +3,7 @@
 Submitted by: Harini Thirukonda (ht2027)
 
 Group Members:  
-Rona Roy (ronaroy), Hansini Chokkalingam (hansinic)
+Rona Roy (ronaroy), Hansini Chokkalingam (hansinic), Yasaswini Bommareddy (yashubry)
 
 App Description:  
 Allow users to search for books using the OpenLibrary API and store/retrieve favorites from MongoDB.
