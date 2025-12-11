@@ -15,7 +15,7 @@ APIs:
 OpenLibrary Books API – https://openlibrary.org/developers/api
 
 Contact Email:  
-your_email@umd.edu
+ht2027@terpmail.umd.edu
 
 Deployed App Link:  
 https://your-render-service.onrender.com
