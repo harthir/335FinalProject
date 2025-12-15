@@ -6,7 +6,7 @@ Group Members:
 Rona Roy (ronaroy), Hansini Chokkalingam (hansinic), Yasaswini Bommareddy (yashubry)
 
 App Description:  
-Allow users to search for books using the OpenLibrary API and store/retrieve favorites from MongoDB.
+Allow users to search for books using the OpenLibrary API and store/retrieve favorites from MongoDB. Can also remove books as needed depending on whether or not it is favorited anymore. 
 
 YouTube Video Link:  
 https://youtu.be/C8uDlY2Tnjs
